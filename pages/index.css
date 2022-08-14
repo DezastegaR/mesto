@@ -3,6 +3,7 @@
 
 /* Page */
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/__blocked/page__blocked.css);
 @import url(../blocks/page/__container/page__container.css);
 
 /* Header */
@@ -32,9 +33,11 @@
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
 /* popup */
-@import url(../blocks/popup/poput.css);
+@import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__opened/popup__opened.css);
 
 /* form */
 @import url(../blocks/form/form.css);
