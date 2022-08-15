@@ -18,17 +18,15 @@ window.onload = () => {
 
   const handleOpenModal = () => {
     setDefaultValuesForm();
-    popup.classList.add("popup__opened");
-    page.classList.add("page__blocked");
+    popup.classList.add("popup_opened");
   };
 
   const handleCloseModal = () => {
-    popup.classList.remove("popup__opened");
-    page.classList.remove("page__blocked");
+    popup.classList.remove("popup_opened");
   };
 
   const toggleModal = () => {
-    const isOpen = popup.classList.contains("popup__opened");
+    const isOpen = popup.classList.contains("popup_opened");
 
     if (isOpen) {
       handleCloseModal();
@@ -47,12 +45,12 @@ window.onload = () => {
   form.addEventListener("submit", formSubmitHandler);
   profileEditButton.addEventListener("click", toggleModal);
   popupClose.addEventListener("click", toggleModal);
-  popup.addEventListener("click", (evt) => {
-    evt.stopPropagation();
-    const closest = evt.target.closest(".popup__container");
+  // popup.addEventListener("click", (evt) => {
+  //   evt.stopPropagation();
+  //   const closest = evt.target.closest(".popup__container");
     
-    if (!closest) {
-      handleCloseModal();
-    }
-  });
+  //   if (!closest) {
+  //     handleCloseModal();
+  //   }
+  // });
 };

@@ -15,7 +15,7 @@
 }
 
 .profile__edit-button:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 880px) {
