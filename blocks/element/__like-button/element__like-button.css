@@ -14,4 +14,8 @@
 
 .element__like-button:hover {
   opacity: 0.5;
+} 
+
+.element__like-button_active {
+  background-image: url(../../../images/heart-active.svg);
 }
